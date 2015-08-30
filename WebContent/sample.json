@@ -1,0 +1,80 @@
+var json = { 
+	"website_name":"ABC",
+	"category": [
+	  	{ "cat_name": "Furniture",
+	      "items": [
+	        {
+	          "sku": "dfej1230000",
+	          "item_name": "chair",
+	          "price": "13000",
+	          "color": "black",
+	          "description": "4 leg dining table"
+	        },
+	        {
+	          "sku": "sacfads1249",
+	          "item_name": "table",
+	          "price": "15000",
+	          "color": "white",
+	          "description": "6 leg dining tale"
+	        }
+	      ]
+	    },
+	    {
+	      "cat_name": "Electronics",
+	      "items": [
+	        {
+	          "sku": "dfe412j1230000",
+	          "item_name": "mouse",
+	          "price": "13000",
+	          "color": "black",
+	          "description": "4 leg dining table"
+	        },
+	        {
+	          "sku": "sacfad12354s1249",
+	          "item_name": "ipad",
+	          "price": "15000",
+	          "color": "white",
+	          "description": "6 leg dining tale"
+	        }
+	      ]
+	    },
+	    {
+	      "cat_name": "Flowers",
+	      "items": [
+	        {
+	          "sku": "dfej1230007890",
+	          "item_name": "jasmine",
+	          "price": "13000",
+	          "color": "black",
+	          "description": "4 leg dining table"
+	        },
+	        {
+	          "sku": "sacf34ads1249",
+	          "item_name": "rose",
+	          "price": "15000",
+	          "color": "white",
+	          "description": "6 leg dining tale"
+	        }
+	      ]
+	    },
+	    {
+	      "cat_name": "Apparel",
+	      "items": [
+	        {
+	          "sku": "dfdfej1230000",
+	          "item_name": "footwear",
+	          "price": "13000",
+	          "color": "black",
+	          "description": "4 leg dining table"
+	        },
+	        {
+	          "sku": "sacfadkjs1249",
+	          "item_name": "shirt",
+	          "price": "15000",
+	          "color": "white",
+	          "description": "6 leg dining tale"
+	        }
+	      ]
+	    }
+    ]
+}

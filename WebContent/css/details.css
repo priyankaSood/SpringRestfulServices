@@ -1,0 +1,41 @@
+/*
+ **********************************************
+ * Main Image
+ **********************************************
+ */
+.product-image-exp {
+	width: 100%;
+}
+.product-image-exp-wrap {
+	margin: 25% auto;
+    width: 50%;
+}
+.product-image-exp-container {
+	border: 1px solid #ccc;
+	margin-top: 1em;
+}
+
+/*
+ **********************************************
+ * Product Details
+ **********************************************
+ */
+
+.product-title {
+	margin-bottom: 0.5em;
+	padding-bottom: 0.5em;
+	border-bottom: 1px solid #ccc;
+	padding-left: 0.5em;
+}
+
+#product-quantity {
+	width: 15%;
+}
+
+.add-cart {
+	border-bottom: 1px solid #ccc;
+}
+.product-desc {
+	padding: 1em;
+	text-align: justify;
+}

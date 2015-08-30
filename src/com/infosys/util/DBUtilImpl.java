@@ -3,13 +3,12 @@ package com.infosys.util;
 import java.net.URI;
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.PreparedStatement;
 import java.util.Map;
 
 import com.ibm.json.java.JSON;
 import com.ibm.json.java.JSONArray;
 import com.ibm.json.java.JSONObject;
-
+	
 public class DBUtilImpl implements DBUtil{
 	/*public DBUtilImpl() {
 		try {
@@ -58,7 +57,7 @@ public class DBUtilImpl implements DBUtil{
 			// We don't know exactly what the service is called, but it will contain "elephantsql"
 			for (Object key : vcap.keySet()) {
 				String keyStr = (String) key;
-				if (keyStr.toLowerCase().contains("postgresql")) {
+				if (keyStr.toLowerCase().contains("sqldb")) {
 					service = (JSONObject) ((JSONArray) vcap.get(keyStr)).get(0);
 					break;
 				}
@@ -67,7 +66,7 @@ public class DBUtilImpl implements DBUtil{
 			if (service != null) {
 				JSONObject creds = (JSONObject) service.get("credentials");
 				URI uri = URI.create((String) creds.get("uri"));
-				String url = "jdbc:postgresql://" + uri.getHost() + ":" + uri.getPort() + uri.getPath();
+				String url = "jdbc:db2://" + uri.getHost() + ":" + uri.getPort() + uri.getPath();
 				String username = uri.getUserInfo().split(":")[0];
 				String password = uri.getUserInfo().split(":")[1];
 				return DriverManager.getConnection(url, username, password);

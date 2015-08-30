@@ -11,18 +11,19 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.infosys.dao.ItemDAOImpl;
 import com.infosys.model.Item;
+import com.infosys.model.Payload;
 
 
 
 @Controller
 public class ItemController {
-	private static final Logger logger = LoggerFactory.getLogger(ItemController.class);
+	//private static final Logger logger = LoggerFactory.getLogger(ItemController.class);
 	@RequestMapping(value = ItemRestURIConstants.GET_ALL_ITEMS, method = RequestMethod.GET)
-	public @ResponseBody List<Item> getAllItems() {
-		logger.info("Start getAllItems.");
-		List<Item> items;
+	public @ResponseBody Payload getAllItems() {
+		//logger.info("Start getAllItems.");
+		Payload payload;
 		ItemDAOImpl dao =new ItemDAOImpl();
-		items = dao.listItems();
-		return items;
+		payload = dao.listItems();
+		return payload;
 	}
 }
