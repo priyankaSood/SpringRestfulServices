@@ -1,16 +1,12 @@
 package com.infosys.controller;
 
-import java.util.List;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
-
 import com.infosys.dao.ItemDAOImpl;
-import com.infosys.model.Item;
+import com.infosys.model.Order;
 import com.infosys.model.Payload;
 
 
@@ -25,5 +21,15 @@ public class ItemController {
 		ItemDAOImpl dao =new ItemDAOImpl();
 		payload = dao.listItems();
 		return payload;
+	}
+	
+	@RequestMapping(value = ItemRestURIConstants.CREATE_ORDER, method = RequestMethod.POST)
+	
+	public @ResponseBody Order createEmployee(@RequestBody Order order) {
+		//logger.info("Start createOrder.");
+		Order orderDetails;
+		ItemDAOImpl dao =new ItemDAOImpl();
+		orderDetails = dao.createOrder(order);
+		return orderDetails;
 	}
 }

@@ -1,14 +1,14 @@
 var GLOB_SITE = {};
 $(document).ready(function(){
-	// var json = null;
-	/*$.ajax({
+	 var json = null;
+	$.ajax({
 		url: "http://restfulexample.mybluemix.net/rest/items",
 		method: "GET",
 		dataType: "html",
 		success: function(data) {
 			json = data;
 		}
-	});*/
+	});
 	var productsListElements = "";
 	var productsGridElements = "";
 	$("#siteTitle").html(json.website_name);
